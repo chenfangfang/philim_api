@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>GPUImageNewYearMeshProcessFilter Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Philm </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">yoyo</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/initWithFilterInfo:image:targetImage:">- initWithFilterInfo:image:targetImage:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">GPUImageNewYearMeshProcessFilter Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/PLBaseFilter.html">PLBaseFilter</a> : <a href="../Classes/GPUImageFilter.html">GPUImageFilter</a> : <a href="../Classes/GPUImageOutput.html">GPUImageOutput</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>GPUImageNewYearFilter.h<br />GPUImageNewYearFilter.mm</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<ol>
+<li>setTargetLandmarks 设置效果图片106                                                                           *</li>
+<li>setSourceLandmarks 设置导入图片106                                                                           *</li>
+<li>ResultA: getAlignedTriangleListToRedrawTarget() 绘制目标脸， 原三角网格， 和变换后的三角网格                    *</li>
+<li>ResultB: getTriangleListToDrawSource() 绘制导入图片到ResultA, 导入图片的texcoord和目标的vercoord              *</li>
+<li>ResultC: getPoissonBlendMask() 获得mask， poisson blend ResultB and ResultA， target = ResultA， src = ResultB  *</li>
+<li>ResultD: getSmoothFaceMask() 获得mask， ResultA与ResultC按照mask融合， ResultD=ResultA<em>(1-mask)+ResultC</em>mask   *</li>
+<li>接Muglife                                                                                                    *</li>
+<li>裁剪                                                                                                         *</li>
+<li>与后景AlphBlend融合                                                                                          *
+10.与前景及前景Mask融合                                                                                         *</li>
+</ol>
+
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithFilterInfo:image:targetImage:" title="initWithFilterInfo:image:targetImage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithFilterInfo:image:targetImage:">&ndash;&nbsp;initWithFilterInfo:image:targetImage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>滤镜初始化</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithFilterInfo:(YSFilterInfo *)<em>info</em> image:(UIImage *)<em>image</em> targetImage:(UIImage *)<em>targetImage</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>info</code></th>
+						<td><p>滤镜信息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>image</code></th>
+						<td><p>图片</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>targetImage</code></th>
+						<td><p>目标图片</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>faceBlend</code></th>
+						<td><p>脸部融合</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回滤镜</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>滤镜初始化</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GPUImageNewYearFilter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 yoyo. All rights reserved. Updated: 2018-04-06</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

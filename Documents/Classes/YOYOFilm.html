@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>YOYOFilm Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Philm </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">yoyo</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/ExtractFrameInfoFromVideo:LiveModel:toVideoArr:AudioArr:progress:">+ ExtractFrameInfoFromVideo:LiveModel:toVideoArr:AudioArr:progress:</option>
+		
+		<option value="//api/name/ResetDiskBuffer:frameLength:">+ ResetDiskBuffer:frameLength:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/getAudioData">- getAudioData</option>
+		
+		<option value="//api/name/getCurrSegIndexFromLastIndex:">- getCurrSegIndexFromLastIndex:</option>
+		
+		<option value="//api/name/getIndexFromRushes:">- getIndexFromRushes:</option>
+		
+		<option value="//api/name/getSegIdx:">- getSegIdx:</option>
+		
+		<option value="//api/name/initWithSegmentsOfVideoFrames:AudioFrames:Models:">- initWithSegmentsOfVideoFrames:AudioFrames:Models:</option>
+		
+		<option value="//api/name/isVideo">- isVideo</option>
+		
+		<option value="//api/name/revalidate">- revalidate</option>
+		
+		<option value="//api/name/saveSegmentState">- saveSegmentState</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">YOYOFilm Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>YOYOFilm.h<br />YOYOFilm.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithSegmentsOfVideoFrames:AudioFrames:Models:" title="initWithSegmentsOfVideoFrames:AudioFrames:Models:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithSegmentsOfVideoFrames:AudioFrames:Models:">&ndash;&nbsp;initWithSegmentsOfVideoFrames:AudioFrames:Models:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化视频Film</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithSegmentsOfVideoFrames:(NSArray *)<em>vArr</em> AudioFrames:(NSArray *)<em>aArr</em> Models:(NSArray *)<em>mArr</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>vArr</code></th>
+						<td><p>分段视频帧数据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aArr</code></th>
+						<td><p>分段音频帧数据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mArr</code></th>
+						<td><p>每一段的LiveVideoModel数据</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化视频Film</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YOYOFilm.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAudioData" title="getAudioData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAudioData">&ndash;&nbsp;getAudioData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取音频信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSMutableArray *)getAudioData</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>音频数据</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取音频信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YOYOFilm.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCurrSegIndexFromLastIndex:" title="getCurrSegIndexFromLastIndex:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCurrSegIndexFromLastIndex:">&ndash;&nbsp;getCurrSegIndexFromLastIndex:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据上一次视频段索引获取当前视频段索引</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)getCurrSegIndexFromLastIndex:(int)<em>lastIndex</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lastIndex</code></th>
+						<td><p>上一次操作视频段索引</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>当前视频段索引</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>根据上一次视频段索引获取当前视频段索引</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YOYOFilm.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getIndexFromRushes:" title="getIndexFromRushes:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getIndexFromRushes:">&ndash;&nbsp;getIndexFromRushes:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据时间获取距离该时间最近的一帧</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)getIndexFromRushes:(double)<em>timestamp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timestamp</code></th>
+						<td><p>时间戳</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>帧索引</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>根据时间获取距离该时间最近的一帧</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YOYOFilm.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSegIdx:" title="getSegIdx:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSegIdx:">&ndash;&nbsp;getSegIdx:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据时间戳获取属于哪一个视频段</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)getSegIdx:(double)<em>timestamp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timestamp</code></th>
+						<td><p>时间戳</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>视频段索引</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>根据时间戳获取属于哪一个视频段</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YOYOFilm.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isVideo" title="isVideo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isVideo">&ndash;&nbsp;isVideo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否是视频模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isVideo</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>BOOL</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>是否是视频模式</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YOYOFilm.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ExtractFrameInfoFromVideo:LiveModel:toVideoArr:AudioArr:progress:" title="ExtractFrameInfoFromVideo:LiveModel:toVideoArr:AudioArr:progress:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ExtractFrameInfoFromVideo:LiveModel:toVideoArr:AudioArr:progress:">+&nbsp;ExtractFrameInfoFromVideo:LiveModel:toVideoArr:AudioArr:progress:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>提取视频相关信息，1.视频帧信息，2.音频数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)ExtractFrameInfoFromVideo:(NSURL *)<em>path</em> LiveModel:(NSMutableArray *)<em>models</em> toVideoArr:(NSMutableArray *)<em>vArr</em> AudioArr:(NSMutableArray *)<em>aArr</em> progress:(void ( ^ ) ( CGFloat ))<em>progress</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>path</code></th>
+						<td><p>mp4路径</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>models</code></th>
+						<td><p>视频段信息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>vArr</code></th>
+						<td><p>视频信息数组</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aArr</code></th>
+						<td><p>音频信息数组</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progress</code></th>
+						<td><p>处理进度</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>提取视频相关信息，1.视频帧信息，2.音频数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YOYOFilm.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ResetDiskBuffer:frameLength:" title="ResetDiskBuffer:frameLength:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ResetDiskBuffer:frameLength:">+&nbsp;ResetDiskBuffer:frameLength:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置硬盘缓冲大小，缓存1/2宽高的灰度图，跟踪使用</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)ResetDiskBuffer:(NSArray *)<em>models</em> frameLength:(int)<em>length</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>models</code></th>
+						<td><p>视频段model数组</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>length</code></th>
+						<td><p>视频帧长度</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置硬盘缓冲大小，缓存1/2宽高的灰度图，跟踪使用</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YOYOFilm.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/revalidate" title="revalidate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/revalidate">&ndash;&nbsp;revalidate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>视频段操作（移动，删除）后，重置相关数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)revalidate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>视频段操作（移动，删除）后，重置相关数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YOYOFilm.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveSegmentState" title="saveSegmentState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveSegmentState">&ndash;&nbsp;saveSegmentState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置置视频段上一次位置，记录操作前视频段位置信息
+在视频段操作前调用</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveSegmentState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置置视频段上一次位置，记录操作前视频段位置信息
+在视频段操作前调用</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YOYOFilm.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 yoyo. All rights reserved. Updated: 2018-04-06</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
